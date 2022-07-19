@@ -1,0 +1,87 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --cell-size: 8vh;
+}
+
+body {
+    margin: 0;
+    width: 30vw;
+    transform: translateX(120%)
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--cell-size);
+    padding: 10px;
+}
+
+#game {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(10, auto);
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--cell-size);
+    border: 1px solid gray;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.show {
+    cursor: default;
+    background-color: white;
+}
+
+.flagged {
+    background-color: red;
+}
+
+.bomb {
+    cursor: default;
+    background-color: black;
+}
+
+.show-1 {
+    color: blue;
+}
+
+.show-2 {
+    color: green;
+}
+
+.show-3 {
+    color: red;
+}
+
+.show-4 {
+    color: purple;
+}
+
+.show-5 {
+    color: black;
+}
+
+.show-6 {
+    color: gray;
+}
+
+.show-7 {
+    color: maroon;
+}
+
+.show-8 {
+    color: turquoise;
+}
